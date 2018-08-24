@@ -1,0 +1,18 @@
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+</Files>
+	
+<Files index.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+RewriteEngine on
+RewriteBase /basis/
+
+RewriteRule ^(signup|login|forgot|activate|logout)/$ index.php?func=auth&page_key=$1 [L,QSA] 
+RewriteRule ^(signup|login|forgot|activate|logout)$ $1/ [L,R=301]
+
+AddDefaultCharset utf-8
