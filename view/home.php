@@ -16,8 +16,6 @@ require_once './view/common/require.php';
     rel="stylesheet" type="text/css" />
 <link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/style.css"
     rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/common.css"
-    rel="stylesheet" type="text/css" />
 <title>Home - <?php $u->xecho(Config::APP_NAME); ?></title>
 </head>
 <body>
