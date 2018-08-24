@@ -257,3 +257,64 @@ img {
         width: 160px;
     }
 }
+
+/************************** HEADER STARTS */
+.header-foundation {
+	top: 0;
+	position: fixed;
+	z-index: 10;
+}
+
+#header {
+	background-color: #cdd3d8;
+	padding: 15px 0px;
+	height: 60px;
+}
+
+#header-right-menu {
+	float: right;
+	margin-top: 5px;
+}
+
+.sub-header {
+	background-color: #FFF;
+	border-bottom: #eceef1 1px solid;
+	padding: 10px 0px;
+}
+
+.page-heading {
+	color: #666666;
+	font-weight: bold;
+	letter-spacing: .05rem;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	display: inline-block;
+}
+
+.sub-header a {
+	color: #666;
+}
+
+.sub-header-padding {
+	padding: 10px 20px;
+}
+
+.signup {
+	border-radius: 3px;
+	padding: 6px 28px;
+	border: 1px solid;
+}
+
+.signup:hover {
+	color: #fff;
+	background-color: #0ccaa0;
+	border-color: #0ccaa0;
+}
+
+/************************** HEADER ENDS */
+#footer {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 40px;
+	padding: 10px 0 20px 0;
+	text-align: center;
+}

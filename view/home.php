@@ -6,16 +6,10 @@ require_once './view/common/require.php';
 <html>
 <head>
 <?php require_once './view/common/html-head.php';?>
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/layout.css"
-    rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/header.css"
-    rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/footer.css"
-    rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/home.css"
-    rel="stylesheet" type="text/css" />
 <link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/style.css"
     rel="stylesheet" type="text/css" />
+<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/home.css"
+    rel="stylesheet" type="text/css" />    
 <title>Home - <?php $u->xecho(Config::APP_NAME); ?></title>
 </head>
 <body>

@@ -3,13 +3,13 @@ use \PhpPot\Common\Config;
 ?>
 <div class="header-foundation full-width">
     <div id="header" class="full-width">
-        <div class="content-margin header-flow">
+        <div class="content-margin">
             <a href='<?php $u->xecho(Config::WORK_ROOT); ?>'
                 class="txtlogo"> <img
                 src="<?php $u->xecho(Config::WORK_ROOT); ?>view/img/logo.png">
             </a>
             <div class="float-right">
-                <ul class="main-menu margin-left-content" id="main-menu">
+                <ul class="main-menu" id="main-menu">
 <?php
 $sessMemberId = $this->u->getSess("member_id");
 if (! isset($sessMemberId)) {
@@ -35,8 +35,8 @@ if (! isset($sessMemberId)) {
         </div>
     </div>
     <!-- header-div ends -->
-    <div class="admin-sub-header margin-left-content">
-        <div class="margin-zero-auto content-padding">
+    <div class="sub-header">
+        <div class="margin-zero-auto">
             <div class="page-heading"><?php
             if (! empty($page_heading)) {
                 $u->xecho($page_heading);
