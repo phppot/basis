@@ -8,8 +8,6 @@ require_once './view/common/require.php';
 <?php require_once './view/common/html-head.php';?>
 <link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/style.css"
     rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/home.css"
-    rel="stylesheet" type="text/css" />    
 <title>Home - <?php $u->xecho(Config::APP_NAME); ?></title>
 </head>
 <body>

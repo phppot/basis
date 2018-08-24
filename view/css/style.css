@@ -318,3 +318,14 @@ img {
 	padding: 10px 0 20px 0;
 	text-align: center;
 }
+
+.welcome-desc {
+    line-height: 1.93;
+    color: #555;
+}
+
+.welcome-panel {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
