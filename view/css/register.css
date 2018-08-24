@@ -1,0 +1,176 @@
+.login-box {
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 3px;
+	background: #fff;
+	min-width: 340px;
+	border-radius: 4px;
+	padding: 30px;
+	width: 250px;
+	margin: 80px auto;
+}
+
+.form-login {
+	padding: 10px;
+}
+
+.form-login h1 {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #191919;
+	font-weight: normal;
+	font-weight: 400;
+	letter-spacing: .05rem;
+	margin: 0;
+	text-align: center;
+}
+
+a.link {
+	text-decoration: none;
+	color: rgb(15, 111, 183);
+	font-size: .78em;
+}
+
+/**** login-box-forget used only in one file password forgot */
+.login-box-forget {
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 3px;
+	background: #fff;
+	min-width: 340px;
+	border-radius: 4px;
+	padding: 30px;
+	width: 250px;
+	margin: 165px auto;
+}
+
+.form-label {
+	margin-bottom: 5px;
+}
+
+.form-row {
+	margin: 15px 0;
+}
+
+.login-register-container {
+	padding: 80px 0px 20px 0px;
+}
+
+.clear-float {
+	float: none;
+	clear: both;
+}
+
+.form-element input {
+	width: 100%;
+	box-sizing: border-box;	
+	margin-bottom: 10px;
+	border-radius: 3px;
+	transition: none;
+}
+
+.agree {
+	font-size: .9em;
+	text-align: center;
+	padding-top: 7px;
+	color: #444;
+}
+
+.agree a:visited {
+	color: #07C;
+	text-decoration: none;
+}
+
+.float-center {
+	text-align: center;
+}
+
+.float-right-hide {
+	padding: 3px;
+	display: none;
+}
+
+.back-ground {
+	background-color: rgba(0, 0, 0, 0.65);
+	border-radius: 3px;
+	font-size: .9em;
+	color: #FFFFFF;
+}
+
+.frmForgot h1 {
+	color: #191919;
+	letter-spacing: .125rem;
+}
+
+.reset-form h1 {
+	color: #191919;
+	letter-spacing: .125rem;
+}
+
+
+.token-message {
+	text-align: center;
+	padding: 150px 2px;
+}
+
+.token-message a {
+	color: #07C;
+}
+
+.token-message a:visited {
+	color: #9e05a7;
+}
+
+.already {
+	font-size: .9em;
+	margin-top: 10px;
+}
+
+.already a, .already a:visited {
+	color: #07C;
+	text-decoration: none;
+}
+
+.signup-agree {
+	font-size: .78em;
+	color: #444;
+}
+
+input#send-message {
+	width: 175px;
+	display: inline-block;
+	background-color: #0cb1f5;
+	font-size: 1.1em;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid;
+	padding: 8px;
+}
+
+.sso-btn a {
+	color: #fff;
+}
+
+.sso-btn:hover {
+	background-color: #3061af;
+}
+
+.sso-btn {
+	background-color: #3e74c9;
+	padding: 5px 10px 5px 10px;
+	border-radius: 2px;
+	text-align: center;
+	color: #ffff;
+	margin-bottom: 10px;
+}
+
+.sso-logo {
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 440px) {
+	.login-box {
+		min-width: 150px;
+		padding: 15px;
+	}
+}

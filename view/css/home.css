@@ -1,0 +1,137 @@
+.banner {
+	height: 450px;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-image: url(../../view/img/shop.jpg);*/
+}
+
+.welcome-title {
+	font-size: 3em;
+}
+
+.welcome-desc {
+	line-height: 1.93;
+	color: #555;
+}
+
+h1.text-center {
+	text-align: center;
+}
+
+.btn-view-more {
+	background-color: #05cca9;
+	color: #f5f7fa;
+	padding: 15px 50px;
+	cursor: pointer;
+	border: 1px solid;
+	border-color: #05cca9;
+	text-decoration: none;
+	margin-right: 4px;
+	text-align: center;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.welcome-panel {
+	padding: 50px 0;
+	text-align: center;
+	background-color: #fff;
+}
+
+.latest-products {
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+
+.f-input {
+	padding: 10px 170px 10px 15px;
+	margin: 0;
+	font-size: 15px;
+	border-radius: 0 2px 2px 0;
+	width: 150px;
+	border: 1px solid #fff;
+}
+
+.g-row {
+	display: -webkit-flex;
+	padding: 10px 0px;
+}
+
+.home-label {
+	color: #535a60;
+	background-color: #eff0f1;
+	border: 0px solid #c8ccd0;
+	border-left-width: 0;
+	border-right-width: 0;
+	text-align: left;
+	width: 90px;
+	border-radius: 2px 0px 0px 2px;
+	line-height: 35px;
+	padding: 0px 20px;
+}
+
+.home-signup {
+	margin: 75px 0px 0px 0px;
+	padding: 30px 30px 30px 35px;
+	background-color: rgba(170, 178, 189, .93);
+	border-radius: 5px;
+	float: right;
+}
+
+div.success {
+	color: #418262
+}
+
+div.error {
+	color: #be0000;
+}
+
+.panel {
+	height: 260px;
+}
+
+.hm-btn {
+	font-size: unset;
+	padding: 10px 0px;
+	width: 130px;
+	background-color: #2abda3;
+	border: 1px solid #2abda3;
+	color: #f5f1f1;
+}
+
+.error-padding {
+	padding: 10px 0px;
+}
+
+.pannel-box {
+	margin: 0px 0px 40px 0px;
+	border: 1px solid #ddd;
+	padding: 10px 0px 100px 0px;
+}
+
+.home-pannel-title {
+	float: left;
+	margin: 0px 0px 0px 10px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #434a54;
+	letter-spacing: .05rem;
+	font-size: 1.3em;
+}
+
+@media screen and (max-width: 580px) {
+	.f-input {
+		padding: 10px 15px 10px 10px;
+	}
+	.home-label {
+		padding: 0px 5px;
+	}
+	.home-signup {
+		padding: 10px 15px 15px 15px;
+	}
+	.hm-btn {
+		padding: 5px 0px;
+		width: 90px;
+	}
+}

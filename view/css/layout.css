@@ -1,0 +1,30 @@
+/************************* LAYOUT STARTS */
+.content-foundation {
+	margin-top: 100px;
+}
+.full-width {
+	width: 100%;
+	box-sizing: border-box;
+}
+.layout-width {
+    width: 1150px;	
+    margin: 0 auto;    
+}
+#wrapper {
+	position: relative;
+}
+/************************* LAYOUT ENDS */
+
+@media screen and (max-width: 1200px) {
+	.layout-width {
+	    width: 95%;   
+	}	
+
+}
+
+@media screen and (max-width: 490px) {
+	table.order-list td{
+	padding: 0px 0px; 
+	
+	}
+}
