@@ -34,7 +34,6 @@ class MemberController extends Controller
 
     public function handleAdd()
     {
-//        $this->loadCtx(true, true, true, true);
         $page_heading = "Signup";
         $selectedMenu = "Member";
         require_once "./Common/Util.php";
@@ -45,7 +44,6 @@ class MemberController extends Controller
                 if (! empty($memberId)) {
                     $this->u->storeSess("message", "Member added successfully.");
                 }
-                //$this->u->redirect("member/");
             }
         }
         require_once 'view/member-signup.php';
