@@ -26,7 +26,7 @@ class MemberController extends Controller
         parent::handleRequest();
         $page_key = $_GET["page_key"];
         switch ($page_key) {
-            case "member-add":
+            case "signup":
                 $this->handleAdd();
                 break;
         }
@@ -34,9 +34,8 @@ class MemberController extends Controller
 
     public function handleAdd()
     {
-        require_once './Common/MemberPrivilegeValidate.php';
-        $this->loadCtx(true, true, true, true);
-        $page_heading = "Member Add";
+//        $this->loadCtx(true, true, true, true);
+        $page_heading = "Signup";
         $selectedMenu = "Member";
         require_once "./Common/Util.php";
         if (! empty($_POST["add"])) {
@@ -56,6 +55,6 @@ class MemberController extends Controller
                 $this->u->redirect("member/");
             }
         }
-        require_once 'view/member-add-admin.php';
+        require_once 'view/member-signup.php';
     }
 }

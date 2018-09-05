@@ -32,8 +32,8 @@ class HomeController extends Controller
 
     public function handleWorkRoot()
     {
-        $this->loadCtx(true, true, true, true);
-        $page_heading = "";
+        $page_heading = "Home";
+        //$this->loadCtx(true, true, true, true);
         require_once "./view/home.php";
     }
 }

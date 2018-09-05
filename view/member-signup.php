@@ -8,17 +8,8 @@ require_once './view/common/require.php';
 <title>Signup - <?php $u->xecho(Config::APP_NAME); ?></title>
 <link href="<?php $u->xecho(Config::WORK_ROOT); ?>view/css/style.css"
     rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/layout.css"
+<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/register.css"
     rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/header.css"
-    rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/footer.css"
-    rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/common.css"
-    rel="stylesheet" type="text/css" />
-<link href="<?php $u->xecho(Config::WORK_ROOT);?>view/css/login.css"
-    rel="stylesheet" type="text/css" />
-<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <?php require_once "common/header.php"; ?>
@@ -106,8 +97,7 @@ require_once './view/common/require.php';
                             in</a>
                     </div>
                 </div>
-    <?php require_once 'framework/form-footer.php';?>
-</form>
+            </form>
         </div>
     </div>
     <!-- container ends -->

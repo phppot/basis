@@ -12,7 +12,7 @@
 RewriteEngine on
 RewriteBase /basis/
 
-RewriteRule ^(signup|login|forgot|activate|logout)/$ index.php?func=auth&page_key=$1 [L,QSA] 
+RewriteRule ^(signup|login|forgot|activate|logout)/$ index.php?func=member&page_key=$1 [L,QSA] 
 RewriteRule ^(signup|login|forgot|activate|logout)$ $1/ [L,R=301]
 
 AddDefaultCharset utf-8
