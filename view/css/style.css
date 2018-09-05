@@ -267,7 +267,7 @@ img {
 
 #header {
 	background-color: #cdd3d8;
-	padding: 15px 0px;
+	padding: 15px 20px;
 	height: 60px;
 }
 
@@ -303,14 +303,20 @@ img {
 	border-radius: 3px;
 	padding: 6px 28px;
 	border: 1px solid;
+    color: #fff;
+    background-color: #0ccaa0;
+    border-color: #0ab992;	
 }
 
 .signup:hover {
-	color: #fff;
-	background-color: #0ccaa0;
-	border-color: #0ccaa0;
+	background-color: #0ab992;
 }
-
+li.main-menu-item {
+    list-style-type: none;
+}
+ul#main-menu {
+    margin: 0;
+}
 /************************** HEADER ENDS */
 #footer {
     border-top: 1px solid #e0e0e0;
