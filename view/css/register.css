@@ -147,27 +147,6 @@ input#send-message {
 	padding: 8px;
 }
 
-.sso-btn a {
-	color: #fff;
-}
-
-.sso-btn:hover {
-	background-color: #3061af;
-}
-
-.sso-btn {
-	background-color: #3e74c9;
-	padding: 5px 10px 5px 10px;
-	border-radius: 2px;
-	text-align: center;
-	color: #ffff;
-	margin-bottom: 10px;
-}
-
-.sso-logo {
-	margin-right: 10px;
-}
-
 @media screen and (max-width: 440px) {
 	.login-box {
 		min-width: 150px;

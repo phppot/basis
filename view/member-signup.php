@@ -63,24 +63,7 @@ require_once './view/common/require.php';
                             id="confirm-password">
                     </div>
                 </div>
-                        <?php
-                        if (! empty($appProperty) && $appProperty[0]["is_recaptcha"] == "1") {
-                            ?>
-                        <div class="row">
-                    <div class="full-width">
-                        <div class="g-recaptcha"
-                            data-sitekey="<?php $u->xecho($appProperty[0]["site_key"]);?>"></div>
-                        <div id="error" class="error"><?php
-                            if (! empty($error)) {
-                                $u->xecho($error);
-                            }
-                            ?> </div>
-                    </div>
-                </div>
-                        <?php
-                        }
-                        ?>
-                        <div class="form-row float-clear">
+                <div class="form-row float-clear">
                     <div class="form-element text-center">
                         <input type="submit" name="register"
                             value="Sign up" class="btn theme-color">
@@ -92,9 +75,7 @@ require_once './view/common/require.php';
                         and <a href="">Privacy Policy</a>.
                     </div>
                     <div class="already">
-                        Already have an account? <a
-                            href="">Log
-                            in</a>
+                        Already have an account? <a href="">Log in</a>
                     </div>
                 </div>
             </form>
@@ -109,18 +90,11 @@ require_once './view/common/require.php';
 function validation() {
     var valid=true;
     var Email = $('#signup-email').val();
-    var Username = $('#signup-username').val();
     var Password = $('#signup-password').val();
     var ConfirmPassword = $('#confirm-password').val();
-    var Country = $('#signup-country').val();
-    var Phone = $('#signup-phone').val();
     $("#error_info").html("");
     var emailRegex = /^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     var passwordregex = /^(?=.*[0-9]+.*)[A-Za-z\d$@$!%*#?&]{8,}$/;
-    if(Username.trim() == "") {
-        $("#error_info").html("Invalid name.").show();
-        valid=false;
-    }
     if(!emailRegex.test(Email)) {
         $("#error_info").html("Invalid email address.").show();
         valid=false;
@@ -133,7 +107,7 @@ function validation() {
         $("#error_info").html("Password must contain ateast 1 number and length atleast 8 .").show();
         valid=false;
     }
-    if((Username=="") || Email=="" || Password=="" || ConfirmPassword==""){
+    if(Email=="" || Password=="" || ConfirmPassword==""){
         $("#error_info").html("All fields are Required.").show();
         valid=false;
         }

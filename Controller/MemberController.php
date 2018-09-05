@@ -38,21 +38,14 @@ class MemberController extends Controller
         $page_heading = "Signup";
         $selectedMenu = "Member";
         require_once "./Common/Util.php";
-        if (! empty($_POST["add"])) {
-            $email = $this->memberModel->getByField("email", $_POST["signup-email"]);
-            if (! empty($email)) {
-                $message = "Email already exists!";
-            }
+        if (! empty($_POST["register"])) {
             if (empty($message)) {
                 $status = "1";
-                $memberId = $this->memberModel->register($_POST["role"], $status);
-                if (! empty($this->appProperty) && $this->appProperty[0]["is_welcome_email"] && $this->appProperty[0]["smtp_auth"] == "1") {
-                    $memberResult = $this->memberModel->getById($memberId);
-                }
+                $memberId = $this->memberModel->register();
                 if (! empty($memberId)) {
                     $this->u->storeSess("message", "Member added successfully.");
                 }
-                $this->u->redirect("member/");
+                //$this->u->redirect("member/");
             }
         }
         require_once 'view/member-signup.php';
