@@ -93,7 +93,7 @@ require_once './view/common/require.php';
                     </div>
                     <div class="already">
                         Already have an account? <a
-                            href="<?php $u->xecho(Config::WORK_ROOT);?>login/">Log
+                            href="">Log
                             in</a>
                     </div>
                 </div>
